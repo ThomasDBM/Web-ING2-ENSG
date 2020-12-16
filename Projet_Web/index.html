@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>GEOldie</title>
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+  <div id=Acceuil>
+
+    <div class=case>
+    <img id=Goldie2 src="Icons/Goldie.png" >
+    </div>
+
+    <p class=titre>GEOldie</p>
+
+    <div class=case>
+    <img id=Goldie1 src="Icons/Goldie.png" >
+    </div>
+
+    <div id=centre class=case>
+    <p>Bienvenue sur GEOldie, le jeu géographique de la Goldie !</p>
+
+    <p id=fin_jeu></p>
+
+    <p id=presentation>Le principe est simple : étudiant.e à l'ENSG, vous êtes en week-end en Moselle avec vos amis. Vous en profitez pour visiter la ville de Metz.
+      Mais après une journée de visite, malheur ! Vous vous rendez compte que vous avez égaré la clé de la Goldie, la voiture qui devait vous permettre de rentrer à Paris !
+      Vous devez la retrouver au plus vite, et le temps presse, car demain à 9h, il y a cours de Web...*<br>
+    </p>
+    <p id=alerte></p>
+
+
+      <form id="form" action="enregistrer_joueur.php" method="post">
+
+        <label for="input">Prénom</label>
+        <input id="nom" class="Nom" type="text" />
+        <button class="bouton" id="bouton" type="button" onclick="demarrer();" onclick>C'est parti !</button>
+      </form>
+    </div>
+    
+    <div class=box_classement>
+      <table class=tableau id='classement'></table>
+    </div>
+
+      <table class=tableau id='informations'>
+        <tr>
+          <td class=titre>Informations</td>
+        </tr>
+        <tr>
+          <td ><br>- Certains objets n'apparaissent qu'à un très faible niveau de zoom,
+             n'hésitez pas à zoomer à fond si vous pensez être au bon endroit !<br> </td>
+        </tr>
+
+        <tr>
+          <td ><br>- A l'inverse, si vous êtes perdu, n'hésitez à de-zoomer pour vous retrouver<br> </td>
+        </tr>
+
+        <tr>
+          <td ><br>- Cliquez une fois sur un objet pour avoir sa présentation.<br></td>
+        </tr>
+
+        <tr>
+          <td ><br>- Double-cliquez sur un objet pour l'utiliser.<br> </td>
+        </tr>
+
+        <tr>
+          <td ><br>- Pour Réussir à finir, il faut autant utiliser les marqueur que les informations présentes directement 
+            sur la carte.<br> </td>
+        </tr>
+          
+      </table>
+  </div>
+
+  <div id=footer>
+    <p class=in_footer id=crédits>Thomas de Beaumont<br> Floriane Kergus</p>
+    <p class=in_footer id=asterix>* Toute ressemblance avec une histoire existant ou ayant existé est purement fortuite.</p>
+  </div>
+
+  <script src='code.js'></script>
+  <script src='Tableau_Score.js'></script>
+  </body>
+
+</html>

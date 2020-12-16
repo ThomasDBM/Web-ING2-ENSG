@@ -1,0 +1,161 @@
+
+body{
+    background-color: #4391f7;
+    height: 100%;
+}
+
+.case{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bouton{
+        border-radius:12px 12px 12px 12px;
+        background:rgb(7, 8, 34);
+        border:none;
+        color:#fff;
+        font:bold 12px Verdana;
+}
+
+.titre{
+    grid-column: 2;
+    grid-row:1;
+    display : flex;
+    justify-content: center;
+    font-size: xx-large;
+    color : #fff;
+}
+
+/*Classement*/
+.bocx_classement{
+    background: rgb(7, 8, 34);
+    overflow:auto;
+    height: 450px;
+}
+.tableau{
+    background: rgb(7, 8, 34);
+    color: #fff;
+    margin-top: 10px;
+    border-radius:10px;
+    border: 10px;
+    border-color: rgb(7, 8, 34);
+}
+
+#classement{
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.Icon_Score{
+    height: 20px;
+    width: 20px;
+}
+
+/*footer*/
+#footer {
+    background-color: rgb(7, 8, 34) ;
+    color: #ffff;
+    width:100%; 
+    height:auto; 
+
+    margin-left: -8px;
+
+    position:fixed; 
+    bottom: 0; 
+    display: flex;
+    justify-content: space-between;
+  }
+
+.in_footer{
+    margin:10px 10px 0 10px;
+}
+
+/* index.html*/
+#Acceuil{
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 250px auto 250px;
+    padding-bottom: 100px;
+}
+
+#alerte{
+    color: red;
+}
+
+#centre{
+    grid-row: 2;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Goldie1{
+    grid-row: 1;
+    grid-column: 1;
+    height: 100px;
+}
+
+#Goldie2{
+    grid-row: 1;
+    grid-column: 3;
+    height: 100px;
+}
+
+#informations{
+    grid-row: 2;
+    grid-column: 3;
+}
+
+
+/* carte.php*/
+
+#carte{
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 250px auto 150px;
+    background-color: #4391f7;
+}
+
+#joueur{
+    grid-column: 1;
+    grid-row:1;
+    justify-content: left;
+}
+
+#portrait{
+    margin-right: 10px;
+}
+
+#objets_recup{
+    grid-row: 2;
+    grid-column: 3;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#mapid { 
+    grid-row: 2;
+    grid-column: 2;
+    height: 450px;
+    border-radius:10px;
+    margin:10px;
+}
+
+#timer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.Objet{
+    width: 110px;
+}
+
+.Icon_Score{
+    height: 20px;
+    width: 20px;
+}
