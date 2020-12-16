@@ -1,13 +1,13 @@
 # Web-ING2-ENSG
 Projet web de deuxième année à l'ENSG
 
-## Table of Contents
+## Table des matières
 
-1. [General Info](#general-info)
+1. [Info générale](#Info-générale)
 2. [Technologies](#technologies)
 3. [Installation](#installation)
 
-### General Info
+### Info générale
 
 Bienvenue sur GEOldie !
 GEOldie est un escape-game géographique dont le principe est simple : votre voiture est bloquée dans un parking de Metz, et vous devez parcourir toute la ville pour en retrouver la clef.
