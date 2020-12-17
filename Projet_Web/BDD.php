@@ -1,15 +1,15 @@
 
 <?php
 
-//connection a la BDD
+//Connexion à la BDD
 $link = mysqli_connect('localhost', 'root', 'root', 'geo_escape');
 
 
-//on récupère l'id de l'objet a récuperer
+//On récupère l'id de l'objet que l'on veut récuperer
 $id=$_GET["Valeur"];
 
 
-if ($results = mysqli_query($link, 'SELECT * FROM objet WHERE id ='. $id .'')) { //si la requete sql renvoie un resultat
+if ($results = mysqli_query($link, 'SELECT * FROM objet WHERE id ='. $id .'')) { //si la requête sql renvoie un résultat
     while ($name = mysqli_fetch_object($results)) {
         $nom = $name;
     }
@@ -17,7 +17,7 @@ if ($results = mysqli_query($link, 'SELECT * FROM objet WHERE id ='. $id .'')) {
     echo 'nope';
 }
 
-//on l'envoie en format json
+//On l'envoie en format json
 echo json_encode($nom);
 
 ?>
