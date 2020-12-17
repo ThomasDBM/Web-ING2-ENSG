@@ -492,7 +492,7 @@ function timer(){
   let min = 0;  //minutes
   intervalId = setInterval(function(){ //on met a jour tout les 100ms
       dec += 1;
-      if(dec >= 10){dec = 00; sec += 1;}
+      if(dec >= 100){dec = 00; sec += 1;}
       if(sec >= 60){sec = 00; min += 1;}
       if(min >= 60){min = 00; heu += 1;}
 
@@ -500,13 +500,13 @@ function timer(){
       if(min<10){
         if(sec<10){
           if(dec<10){
-            time.innerHTML ='0'+ min + ':0' + sec + ':' + dec;
+            time.innerHTML ='0'+ min + ':0' + sec + ':0' + dec;
           } else{
             time.innerHTML ='0'+ min + ':0' + sec + ':' + dec;
           }
         } else{
           if(dec<10){
-            time.innerHTML ='0'+ min + ':' + sec + ':' + dec;
+            time.innerHTML ='0'+ min + ':' + sec + ':0' + dec;
           }else{
             time.innerHTML ='0'+ min + ':' + sec + ':' + dec;
           }
@@ -514,19 +514,19 @@ function timer(){
       }else{
        if(sec<10){
           if(dec<10){
-            time.innerHTML = min + ':0' + sec + ':' + dec;
+            time.innerHTML = min + ':0' + sec + ':0' + dec;
           } else{
             time.innerHTML = min + ':0' + sec + ':' + dec;
           }
         } else{
           if(dec<10){
-            time.innerHTML = min + ':' + sec + ':' + dec;
+            time.innerHTML = min + ':' + sec + ':0' + dec;
           }else{
             time.innerHTML = min + ':' + sec + ':' + dec;
           }
         }
       }
-  }, 100)
+  }, 10)
 }
 
 //stop le timer
