@@ -500,13 +500,13 @@ function timer(){
       if(min<10){
         if(sec<10){
           if(dec<10){
-            time.innerHTML ='0'+ min + ':0' + sec + ':0' + dec;
+            time.innerHTML ='0'+ min + ':0' + sec + ':' + dec;
           } else{
             time.innerHTML ='0'+ min + ':0' + sec + ':' + dec;
           }
         } else{
           if(dec<10){
-            time.innerHTML ='0'+ min + ':' + sec + ':0' + dec;
+            time.innerHTML ='0'+ min + ':' + sec + ':' + dec;
           }else{
             time.innerHTML ='0'+ min + ':' + sec + ':' + dec;
           }
@@ -514,13 +514,13 @@ function timer(){
       }else{
        if(sec<10){
           if(dec<10){
-            time.innerHTML = min + ':0' + sec + ':0' + dec;
+            time.innerHTML = min + ':0' + sec + ':' + dec;
           } else{
             time.innerHTML = min + ':0' + sec + ':' + dec;
           }
         } else{
           if(dec<10){
-            time.innerHTML = min + ':' + sec + ':0' + dec;
+            time.innerHTML = min + ':' + sec + ':' + dec;
           }else{
             time.innerHTML = min + ':' + sec + ':' + dec;
           }
