@@ -464,8 +464,8 @@ function Click_Clefs(e){
   }
   setTimeout(function(){  //A la fin du déplacement
     //On change le popup de la voiture pour indiquer la suite
-    Voiture.bindPopup('Vous êtes enfin rentré.e à Champs sur Marne, quel soulagement <br>\
-    <button class="bouton" id="bouton" type="button" onclick="fin();" onclick>fin !</button>').openPopup();
+    Voiture.bindPopup('Vous êtes enfin rentré.e à Champs sur Marne, quel soulagement !<br>\
+    <button class="bouton" id="bouton" type="button" onclick="fin();" onclick>Fin !</button>').openPopup();
   }, 17250)
 
 }
