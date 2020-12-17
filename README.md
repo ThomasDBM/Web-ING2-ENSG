@@ -53,7 +53,7 @@ Sur phpmyadmin créez une nouvelle base de donnée en lui donnant le nom : geo_e
 Vous avez du trouver dans le dossier Projet_Web un fichier du même nom : geo_escape.sql
 ouvrez le a copiez l'intégralité de son contenu.
 Retournez sur phpmyadmin et collez ce que vous avez copié dans l'onglet SQL.
-Il vous suffit d'appuyer sur Go et la ase de donnée est importée !
+Il vous suffit d'appuyer sur Go et la base de donnée est importée !
 
 
 Il vous suffit ensuite de taper « localhost » dans la barre de recherche de votre navigateur. Vous n’avez plus qu’à suivre les instructions à l’écran !
