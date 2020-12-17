@@ -19,7 +19,7 @@ Technologies utilisées:
 
 ### Installation
 
-Commencez par récupérer le dossier Projet_Web. Et plcez le à l’emplacement de votre choix. 
+Commencez par récupérer le dossier Projet_Web et placez-le à l’emplacement de votre choix. 
 
 Pour pouvoir exécuter les fichiers d’utilisation du jeu sur votre machine, il vous faudra installer un serveur. Les manipulations à effectuer dépendent de votre système d’exploitation.
 
