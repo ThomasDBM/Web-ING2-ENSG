@@ -36,7 +36,6 @@ Cliquez sur MAMP, puis sur Préférences. Dans l’onglet Web Server, cliquez su
 ![preférences_mamp](https://user-images.githubusercontent.com/76124859/102393543-cbd2ae80-3fd8-11eb-9838-41fd98519eba.png)
 
 Il s’agit du dossier Projet_Web, que vous avez préalablement téléchargé à l’emplacement de votre choix.
-Il vous suffit ensuite de taper « localhost » dans la barre de recherche de votre navigateur. Vous n’avez plus qu’à suivre les instructions à l’écran !
 
 II – Vous êtes sous Linux :
 
@@ -49,4 +48,12 @@ Pour pouvoir lancer le jeu, il vous faudra créé la base de donnée sur votre a
 Pour commencer assurez vous d'avoir ouvert le serveur SQL en plus du serveur apache sur Mamp.
 Ensuite cliquez sur : Open Webstart page et rendez vous sur la page d'accueil de Mamp sur votre navigateur.
 De la, cliquez sur PHPmyAdmin pour acceder a la gestion de base de donnée
+![phpmyadmin](https://user-images.githubusercontent.com/76124859/102506656-a3ec5500-4083-11eb-87d9-f24b580bce95.PNG)
+Sur phpmyadmin créez une nouvelle base de donnée en lui donnant le nom : geo_escape
+Vous avez du trouver dans le dossier Projet_Web un fichier du même nom : geo_escape.sql
+ouvrez le a copiez l'intégralité de son contenu.
+Retournez sur phpmyadmin et collez ce que vous avez copié dans l'onglet SQL.
+Il vous suffit d'appuyer sur Go et la ase de donnée est importée !
 
+
+Il vous suffit ensuite de taper « localhost » dans la barre de recherche de votre navigateur. Vous n’avez plus qu’à suivre les instructions à l’écran !
