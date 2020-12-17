@@ -1,6 +1,6 @@
 <?php
 
-//connection a la BDD
+//Connexion à la BDD
 $link = mysqli_connect('localhost', 'root', 'root', 'geo_escape');
 
 /*if (!$link) {
@@ -9,22 +9,22 @@ $link = mysqli_connect('localhost', 'root', 'root', 'geo_escape');
   echo 'Succès... ';
 }*/
 
-//on recupère les indormation du joueur
+//On récupère les informations du joueur
 $Nom = json_decode(file_get_contents('php://input'),true)["nom"];
 $temps=json_decode(file_get_contents('php://input'),true)["temps"];
 $image=json_decode(file_get_contents('php://input'),true)["picture"];
 
 
-//on ecrit la requète SQL
+//On écrit la requête SQL
 $requete="INSERT INTO `joueurs` (`Nom`, `Temps`, `Picture`) VALUES ('". $Nom ."','". $temps ."','". $image ."')";
 
-//on demande un resultat
+//On demande un résultat
 $results = mysqli_query($link,$requete);
 
 if ($results) { //si le résultat est bon
-  echo json_encode('joueur_enregistré'); //on dit que c'est bon
+  echo json_encode('joueur_enregistré'); //le joueur est enregistré
 } else { //sinon
-    echo  json_encode('nope'); //on dit que c'est pas bon
+    echo  json_encode('nope'); //message d'erreur
 }
 
 ?>

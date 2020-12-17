@@ -19,7 +19,7 @@ Technologies utilisées:
 
 ### Installation
 
-Commencez par récupérer le dossier Projet_Web. Et plcez le à l’emplacement de votre choix. 
+Commencez par récupérer le dossier Projet_Web et placez-le à l’emplacement de votre choix. 
 
 Pour pouvoir exécuter les fichiers d’utilisation du jeu sur votre machine, il vous faudra installer un serveur. Les manipulations à effectuer dépendent de votre système d’exploitation.
 
@@ -42,16 +42,16 @@ II – Vous êtes sous Linux :
 Il vous faut dans ce cas installer un serveur LAMP. N’ayant pas d’environnement Linux à disposition, nous sommes dans l’incapacité de vous donner des indications précises quant à cette installation. Nous vous recommandons cependant de suivre ce tuto https://www.linuxtricks.fr/wiki/debian-installer-un-serveur-lamp-apache-mysql-php ou celui-ci http://doc.ubuntu-fr.org/lamp.  
 Une fois LAMP installé, tapez « localhost » dans la barre de recherche de votre navigateur, puis sélectionnez le dossier Projet_Web. Vous n’avez plus qu’à suivre les instructions à l’écran !
 
-III Importation Base de donnée :
+III - Importation de la base de données :
 
-Pour pouvoir lancer le jeu, il vous faudra créé la base de donnée sur votre appareil.
-Pour commencer assurez vous d'avoir ouvert le serveur SQL en plus du serveur apache sur Mamp.
-Ensuite cliquez sur : Open Webstart page et rendez vous sur la page d'accueil de Mamp sur votre navigateur.
-De la, cliquez sur PHPmyAdmin pour acceder a la gestion de base de donnée
+Pour pouvoir lancer le jeu, il vous faudra créer la base de données sur votre machine.
+Pour commencer, assurez-vous d'avoir ouvert le serveur SQL en plus du serveur apache sur Mamp.
+Ensuite, cliquez sur Open Webstart page et rendez-vous sur la page d'accueil de Mamp sur votre navigateur.
+De là, cliquez sur PHPmyAdmin pour accéder à la gestion de la base de données.
 ![phpmyadmin](https://user-images.githubusercontent.com/76124859/102506656-a3ec5500-4083-11eb-87d9-f24b580bce95.PNG)
-Sur phpmyadmin créez une nouvelle base de donnée en lui donnant le nom : geo_escape
-Vous avez du trouver dans le dossier Projet_Web un fichier du même nom : geo_escape.sql
-ouvrez le a copiez l'intégralité de son contenu.
+Sur phpmyadmin, créez une nouvelle base de données en lui donnant le nom geo_escape.
+Vous avez dû trouver dans le dossier Projet_Web un fichier du même nom : geo_escape.sql.
+Ouvrez-le et copiez l'intégralité de son contenu.
 Retournez sur phpmyadmin et collez ce que vous avez copié dans l'onglet SQL.
 Il vous suffit d'appuyer sur Go et la base de donnée est importée !
 

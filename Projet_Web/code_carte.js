@@ -501,6 +501,7 @@ function timer(){
         if(sec<10){
           if(cent<10){
             time.innerHTML ='0'+ min + ':0' + sec + ':0' + cent;
+
           } else{
             time.innerHTML ='0'+ min + ':0' + sec + ':' + cent;
           }
