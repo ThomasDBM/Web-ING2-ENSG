@@ -487,47 +487,47 @@ function Bouger_marker(obj,coords,delay){
 //On calcule le temps qui s'écoule dans la partie
 function timer(){
   time=document.getElementById('timer')
-  let cent = 0;  //centièmes de seconde
+  let dec = 0;  //dixièmes de seconde
   let sec = 0;  //secondes
   let min = 0;  //minutes
   intervalId = setInterval(function(){ //On met à jour toutes les 100ms
-      cent += 1;
-      if(cent >= 100){dec = 00; sec += 1;}
+      dec += 1;
+      if(dec >= 10){dec = 00; sec += 1;}
       if(sec >= 60){sec = 00; min += 1;}
       if(min >= 60){min = 00; heu += 1;}
 
       //On affiche le timer
       if(min<10){
         if(sec<10){
-          if(cent<10){
-            time.innerHTML ='0'+ min + ':0' + sec + ':0' + cent;
+          if(dec<10){
+            time.innerHTML ='0'+ min + ':0' + sec + ':0' + dec;
 
           } else{
-            time.innerHTML ='0'+ min + ':0' + sec + ':' + cent;
+            time.innerHTML ='0'+ min + ':0' + sec + ':' + dec;
           }
         } else{
-          if(cent<10){
-            time.innerHTML ='0'+ min + ':' + sec + ':0' + cent;
+          if(dec<10){
+            time.innerHTML ='0'+ min + ':' + sec + ':0' + dec;
           }else{
-            time.innerHTML ='0'+ min + ':' + sec + ':' + cent;
+            time.innerHTML ='0'+ min + ':' + sec + ':' + dec;
           }
         }
       }else{
        if(sec<10){
-          if(cent<10){
-            time.innerHTML = min + ':0' + sec + ':0' + cent;
+          if(dec<10){
+            time.innerHTML = min + ':0' + sec + ':0' + dec;
           } else{
-            time.innerHTML = min + ':0' + sec + ':' + cent;
+            time.innerHTML = min + ':0' + sec + ':' + dec;
           }
         } else{
-          if(cent<10){
-            time.innerHTML = min + ':' + sec + ':0' + cent;
+          if(dec<10){
+            time.innerHTML = min + ':' + sec + ':0' + dec;
           }else{
-            time.innerHTML = min + ':' + sec + ':' + cent;
+            time.innerHTML = min + ':' + sec + ':' + dec;
           }
         }
       }
-  }, 10)
+  }, 100)
 }
 
 //On arrête le timer
