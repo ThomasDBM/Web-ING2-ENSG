@@ -23,7 +23,7 @@ Commencez par récupérer le dossier Projet_Web et placez-le à l’emplacement 
 
 Pour pouvoir exécuter les fichiers d’utilisation du jeu sur votre machine, il vous faudra installer un serveur. Les manipulations à effectuer dépendent de votre système d’exploitation.
 
-I – Sous Windows ou MacOS :
+#### Sous Windows ou MacOS
 
 Téléchargez et installez le logiciel MAMP à l’adresse suivante :
 https://www.mamp.info/fr/downloads/. 
@@ -37,13 +37,13 @@ Cliquez sur MAMP, puis sur Préférences. Dans l’onglet Web Server, cliquez su
 
 Il s’agit du dossier Projet_Web, que vous avez préalablement téléchargé à l’emplacement de votre choix.
 
-II – Sous Linux :
+#### Sous Linux
 
 Il vous faut dans ce cas installer un serveur LAMP. N’ayant pas d’environnement Linux à disposition, nous sommes dans l’incapacité de vous donner des indications précises quant à cette installation. Nous vous recommandons cependant de suivre ce tuto https://www.linuxtricks.fr/wiki/debian-installer-un-serveur-lamp-apache-mysql-php ou celui-ci http://doc.ubuntu-fr.org/lamp.  
 
 ### Importation de la base de données
 
-I - Sous Windows ou MacOS
+#### Sous Windows ou MacOS
 
 Pour pouvoir lancer le jeu, il vous faudra créer la base de données sur votre machine.
 Pour commencer, assurez-vous d'avoir ouvert le serveur SQL en plus du serveur apache sur Mamp. Ensuite, cliquez sur Open Webstart page et rendez-vous sur la page d'accueil de Mamp sur votre navigateur. De là, cliquez sur PHPmyAdmin pour accéder à la gestion de la base de données.
@@ -54,7 +54,7 @@ Sur phpmyadmin, créez une nouvelle base de données en lui donnant le nom geo_e
 
 Il vous suffit ensuite de taper « localhost » dans la barre de recherche de votre navigateur. Vous n’avez plus qu’à suivre les instructions à l’écran !
 
-II - Sous Linux
+#### Sous Linux
 
 Une fois LAMP installé, tapez « localhost/phpmyadmin » dans la barre de recherche de votre navigateur pour accéder à la base de données. Une fois celle-ci créée, tapez « localhost/phpmyadmin » dans la barre de recherche. Sélectionnez le dossier Projet_Web. Vous n’avez plus qu’à suivre les instructions à l’écran !
 
