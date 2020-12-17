@@ -19,6 +19,9 @@ Technologies utilisées:
 
 ### Installation
 
+Commencez par récupérer le dossier Projet_Web. Et plcez le à l’emplacement de votre choix. 
+
+Pour pouvoir exécuter les fichiers d’utilisation du jeu sur votre machine, il vous faudra installer un serveur. Les manipulations à effectuer dépendent de votre système d’exploitation.
 
 I – Vous êtes sous Windows ou MacOS :
 
@@ -39,3 +42,11 @@ II – Vous êtes sous Linux :
 
 Il vous faut dans ce cas installer un serveur LAMP. N’ayant pas d’environnement Linux à disposition, nous sommes dans l’incapacité de vous donner des indications précises quant à cette installation. Nous vous recommandons cependant de suivre ce tuto https://www.linuxtricks.fr/wiki/debian-installer-un-serveur-lamp-apache-mysql-php ou celui-ci http://doc.ubuntu-fr.org/lamp.  
 Une fois LAMP installé, tapez « localhost » dans la barre de recherche de votre navigateur, puis sélectionnez le dossier Projet_Web. Vous n’avez plus qu’à suivre les instructions à l’écran !
+
+III Importation Base de donnée :
+
+Pour pouvoir lancer le jeu, il vous faudra créé la base de donnée sur votre appareil.
+Pour commencer assurez vous d'avoir ouvert le serveur SQL en plus du serveur apache sur Mamp.
+Ensuite cliquez sur : Open Webstart page et rendez vous sur la page d'accueil de Mamp sur votre navigateur.
+De la, cliquez sur PHPmyAdmin pour acceder a la gestion de base de donnée
+
