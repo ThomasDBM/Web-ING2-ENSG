@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 16, 2020 at 10:52 PM
+-- Generation Time: Dec 17, 2020 at 02:59 PM
 -- Server version: 5.7.24
 -- PHP Version: 7.4.1
 
@@ -40,18 +40,13 @@ CREATE TABLE `joueurs` (
 --
 
 INSERT INTO `joueurs` (`id`, `Nom`, `Temps`, `Picture`) VALUES
-(9, 'Toto', '01:17:02', 'Yoshi.png'),
-(10, 'gus', '06:26:03', 'Yoshi.png'),
-(14, 'Thomas', '01:37:09', 'No_picture.png'),
-(16, 'Floxi', '01:30:03', 'No_picture.png'),
-(17, 'Floxi', '01:32:07', 'No_picture.png'),
-(18, 'Floriane', '07:51:06', 'Birdo.png'),
-(19, 'Floriane', '02:18:00', 'No_picture.png'),
-(23, 'Audrey', '21:51:03', 'Mario.png'),
-(24, 'Kerggy', '01:36:00', 'No_picture.png'),
-(25, 'Floxi', '05:14:00', 'Birdo.png'),
-(44, 'SuperThomas95', '01:07:05', 'No_picture.png'),
-(45, 'MomoLeMoineau', '09:09:05', 'Daisy.png');
+(1, 'Toto', '01:17:02', 'Yoshi.png'),
+(2, 'gus', '06:26:03', 'Yoshi.png'),
+(3, 'Floriane', '07:51:06', 'Birdo.png'),
+(4, 'Audrey', '21:51:03', 'Mario.png'),
+(5, 'Floxi', '05:14:00', 'Birdo.png'),
+(6, 'MomoLeMoineau', '09:09:05', 'Daisy.png'),
+(7, 'thom-dinosaure', '08:24:01', 'Daisy.png');
 
 -- --------------------------------------------------------
 
@@ -109,7 +104,7 @@ ALTER TABLE `objet`
 -- AUTO_INCREMENT for table `joueurs`
 --
 ALTER TABLE `joueurs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -452,8 +452,7 @@ function Click_Clefs(e){
   [49.1790,5.7746],[49.1215,5.5879],[49.1125,5.4121],[49.0927,5.0056],
   [49.0297,4.4783],[49.1484,4.1871],[49.2167,3.9427],[49.1664,3.7257],
   [49.0873,3.3934],[49.0153,3.1544],[48.8638,2.8578],[48.8294,2.6106],
-  [48.8356,2.5826,17],[48.8377,2.5823],[48.8380,2.5835],[48.8379,2.5855],
-  [48.8400,2.5861],[48.8408,2.5860]];
+  [48.8356,2.5826,17],[48.8377,2.5823],[48.8380,2.5835],[48.8379,2.5855],[48.8401,2.5861],[48.8408,2.5860]];
 
   //on récupère le marker de la voiture
   var Voiture=markers['Goldie'];
@@ -465,7 +464,6 @@ function Click_Clefs(e){
   }
   setTimeout(function(){  //a la fin du déplacement
     //on change le popup de la voiture pour indiquer la suite
-    mymap.setZoom(18);
     Voiture.bindPopup('Vous êtes enfin rentré à Champs sur Marne, quel soulagement <br>\
     <button class="bouton" id="bouton" type="button" onclick="fin();" onclick>fin !</button>').openPopup();
   }, 17250)
