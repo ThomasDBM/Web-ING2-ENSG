@@ -26,7 +26,7 @@ function Recup_Objet(id,text,fonction){
   fetch('BDD.php?Valeur='+id).then(function (result) {
     return result.json();
 
-  }) .then(function (result) {    //On affiche un marker avec les informations de la BDD
+  }) .then(function (result) {    //On affiche un marqueur avec les informations de la BDD
 
     var objet = L.icon({
       iconUrl: "icons/"+result['icon'],
@@ -46,7 +46,7 @@ function Recup_Objet(id,text,fonction){
        mymap.addLayer(Objet)
      }
 
-     //On crée une fonction pour afficher le marker ou non en fonction du niveau de zoom
+     //On crée une fonction pour afficher le marqueur ou non en fonction du niveau de zoom
      mymap.on('zoom',function(){
       Zoom_actuel=mymap.getZoom()
       if (Zoom_actuel>=result['zoom']){
@@ -75,7 +75,7 @@ Recup_Objet(11,"En arrivant au commissariat, un officier semble vous reconnaitre
 <button class='bouton' id='bouton_Comi' type='button' onclick='Click_Comissariat();' onclick>Récupérer les clefs</button> ",Click_Comissariat)
 timer()
 
-//Fonction appelée si on double-clicque sur la Goldie
+//Fonction appelée si on double-clique sur la Goldie
 function Click_Goldie(e){
 
   //On récupère les coordonnées
@@ -180,7 +180,7 @@ function Click_Fontaine(e){
 
       var indice=Math.floor(Math.random() * Math.floor(6))
 
-      //On recupère l'objet html
+      //On récupère l'objet html
       var x = document.getElementById("portrait"); 
       
       //Et on change sa source pour modifier l'image 
@@ -351,13 +351,13 @@ function Click_Gare(e){
   [49.1174,6.1875],[49.1194,6.1873],[49.1210,6.1873],[49.1229,6.1869],[49.1252,6.1865],
   [49.1266,6.1861]];
 
-  //On récupère le marker et on ferme son popup
+  //On récupère le marqueur et on ferme son popup
   var train=this;
   train.closePopup();
   
 
   for(co in deplacement){  //On parcourt la liste des coordonnées
-    //On déplace le marker aux coordonnées en ajoutant un délai de plus en plus long
+    //On déplace le marqueur aux coordonnées en ajoutant un délai de plus en plus long
     Bouger_marker(train,deplacement[co],co*500)
 
   }
@@ -384,12 +384,12 @@ function Click_Port(e){
   [49.1236,6.1792],[49.1243,6.1806],[49.1247,6.1812],[49.1252,6.1826],[49.1257,6.1839],
   [49.1261,6.1850],[49.1265,6.1860]];
 
-  //On récupère le marker et on ferme son popup
+  //On récupère le marqueur et on ferme son popup
   var bateau=this;
   bateau.closePopup()
 
   for(co in deplacement){   //On parcourt la liste des coordonnées
-    //On déplace le marker aux coordonnées en ajoutant un délai de plus en plus long
+    //On déplace le marqueur aux coordonnées en ajoutant un délai de plus en plus long
     Bouger_marker(bateau,deplacement[co],co*500)
   }
   setTimeout(function(){   //A la fin du déplacement
@@ -446,7 +446,7 @@ function Click_Clefs(e){
   storage.setItem(0, true);
   storage.setItem(1, time_fin);
   
- //On crée la liste des coordonnées prisee par la Goldie
+ //On crée la liste des coordonnées prises par la Goldie
  var deplacement=[[49.1200,6.1840,12],[49.1319,6.1682],[49.1504,6.1843],
   [49.1789,6.1768],[49.2006,6.1750],[49.2001,6.1159,8],[49.1866,5.9827],
   [49.1790,5.7746],[49.1215,5.5879],[49.1125,5.4121],[49.0927,5.0056],
@@ -454,12 +454,12 @@ function Click_Clefs(e){
   [49.0873,3.3934],[49.0153,3.1544],[48.8638,2.8578],[48.8294,2.6106],
   [48.8356,2.5826,17],[48.8377,2.5823],[48.8380,2.5835],[48.8379,2.5855],[48.8401,2.5861],[48.8408,2.5860]];
 
-  //On récupère le marker de la voiture
+  //On récupère le marqueur de la voiture
   var Voiture=markers['Goldie'];
 
 
   for(co in deplacement){ //On parcourt la liste des coordonnées
-    //On déplace le marker aux coordonnées en ajoutant un délai de plus en plus long
+    //On déplace le marqueur aux coordonnées en ajoutant un délai de plus en plus long
     Bouger_marker(Voiture,deplacement[co],co*750);
   }
   setTimeout(function(){  //A la fin du déplacement
@@ -470,21 +470,21 @@ function Click_Clefs(e){
 
 }
 
-//On retourne à la page d'acceuil
+//On retourne à la page d'accueil
 function fin(){
   self.location.href="index.html";
 }
 
-//Au bout d'un certain temps, on déplace un marker à des coordonnées données
+//Au bout d'un certain temps, on déplace un marqueur à des coordonnées données
 function Bouger_marker(obj,coords,delay){
   setTimeout(function(){
     if(coords.length==3){mymap.setZoom(coords[2]);}  //Si on a l'info, on change de zoom
     mymap.setView([coords[0],coords[1]]);  //On change la vue sur les nouvelles coordonnées
-    obj.setLatLng({lat: coords[0], lng: coords[1]}); //On déplace le marker aux nouvelles coordonnées
+    obj.setLatLng({lat: coords[0], lng: coords[1]}); //On déplace le marqueur aux nouvelles coordonnées
   }, delay)
 }
 
-//Calcul le temps qui s'écoule dans la partie
+//On calcule le temps qui s'écoule dans la partie
 function timer(){
   time=document.getElementById('timer')
   let cent = 0;  //centièmes de seconde
@@ -530,7 +530,7 @@ function timer(){
   }, 10)
 }
 
-//stop le timer
+//On arrête le timer
 function stopTimer(){
   clearInterval(intervalId);
 }
