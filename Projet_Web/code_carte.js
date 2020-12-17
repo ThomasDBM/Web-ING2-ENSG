@@ -487,42 +487,43 @@ function Bouger_marker(obj,coords,delay){
 //calcul le temps qui s'écoule dans la partie
 function timer(){
   time=document.getElementById('timer')
-  let dec = 0;  //dixièmes de seconde
+  let cent = 0;  //centièmes de seconde
   let sec = 0;  //secondes
   let min = 0;  //minutes
   intervalId = setInterval(function(){ //on met a jour tout les 100ms
-      dec += 1;
-      if(dec >= 100){dec = 00; sec += 1;}
+      cent += 1;
+      if(cent >= 100){dec = 00; sec += 1;}
       if(sec >= 60){sec = 00; min += 1;}
       if(min >= 60){min = 00; heu += 1;}
 
       //on affiche le timer
       if(min<10){
         if(sec<10){
-          if(dec<10){
-            time.innerHTML ='0'+ min + ':0' + sec + ':0' + dec;
+          if(cent<10){
+            time.innerHTML ='0'+ min + ':0' + sec + ':0' + cent;
+
           } else{
-            time.innerHTML ='0'+ min + ':0' + sec + ':' + dec;
+            time.innerHTML ='0'+ min + ':0' + sec + ':' + cent;
           }
         } else{
-          if(dec<10){
-            time.innerHTML ='0'+ min + ':' + sec + ':0' + dec;
+          if(cent<10){
+            time.innerHTML ='0'+ min + ':' + sec + ':0' + cent;
           }else{
-            time.innerHTML ='0'+ min + ':' + sec + ':' + dec;
+            time.innerHTML ='0'+ min + ':' + sec + ':' + cent;
           }
         }
       }else{
        if(sec<10){
-          if(dec<10){
-            time.innerHTML = min + ':0' + sec + ':0' + dec;
+          if(cent<10){
+            time.innerHTML = min + ':0' + sec + ':0' + cent;
           } else{
-            time.innerHTML = min + ':0' + sec + ':' + dec;
+            time.innerHTML = min + ':0' + sec + ':' + cent;
           }
         } else{
-          if(dec<10){
-            time.innerHTML = min + ':' + sec + ':0' + dec;
+          if(cent<10){
+            time.innerHTML = min + ':' + sec + ':0' + cent;
           }else{
-            time.innerHTML = min + ':' + sec + ':' + dec;
+            time.innerHTML = min + ':' + sec + ':' + cent;
           }
         }
       }
