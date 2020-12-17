@@ -4,7 +4,7 @@ Projet web de deuxième année à l'ENSG
 ## Table des matières
 
 1. [Info générale](#Info-générale)
-2. [Technologies](#technologies)
+2. [Technologie](#technologie)
 3. [Installation](#installation)
 
 ### Info générale
